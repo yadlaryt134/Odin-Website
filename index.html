@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+    html, body {
+        height: 100%;
+        margin: 0;
+        color: white;
+    }
+
+    
+
+     ul.navbar {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    ul.navbar li {
+      float: right;
+    }
+
+    
+    ul.navbar li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    .content-header {
+
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-bottom: 5%;
+        background-color: #333;
+
+    }
+
+    .layout {
+
+        margin-left: 25%;
+        margin-right: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .item {
+        flex: 1;
+    }
+
+    .horz-column {
+
+        display: flex;
+        flex-direction: row;
+        position: relative;
+    }
+
+    .horz-item {
+        flex 1:
+        min-width: 10px;
+        padding: 10px;
+    }
+
+    .box {
+        width: 150px;
+        height: 150px;
+        border: 5px solid pink;
+        border-radius: 10px;
+
+    }
+
+</style>
+
+
+<body>
+
+    <!-- everything will be in div flex continaers -->
+
+    <div class="layout">
+        
+
+            
+        <!-- The header -->
+
+        <div class="content-header item">
+
+            <ul class="navbar">
+
+                <div style="float: left; font-weight: bolder;">
+                    <li><a href="#">Marie Antoinette</a></li>
+                </div>
+                
+                <div>   
+                    <li> <a href="#">Link one</a> </li>
+                    <li> <a href="#">Link two</a> </li>
+                    <li> <a href="#">Link three</a> </li>
+                </div>
+               
+            </ul>
+
+
+            <div class="horz-column">
+
+                <div class="horz-item">
+
+                    <h1>This is a Marie Antoinette <br> Website</h1>
+                    <p>Learn more aboue Marie Antoinette here</p>
+                    <button>Get More Marie!</button>
+
+
+
+                </div>
+
+                <div class="horz-item">
+                    <img src="../odin-recipes/images/madelines.png" alt="" style="width: 300px; height: 100px;">
+                </div>
+
+               
+            </div>
+
+        </div>
+
+        <!-- middle content -->
+
+        <div class="item" style="color: black; text-align: center;">
+            <h1>Marie Antoinette Timeline</h1>
+
+            <div class="horz-column">
+                <div class="horz-item">
+                    <div class="box"></div>
+                    <div style="width: 150px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam, hic ratione ullam aliquid obcaecati eius officia, soluta ea, voluptate aspernatur dolorum consequatur non fugit iste autem? Optio est perferendis nam.</div>
+                </div>
+                <div class="horz-item">
+                    <div class="box"></div>
+                    <div style="width: 150px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam, hic ratione ullam aliquid obcaecati eius officia, soluta ea, voluptate aspernatur dolorum consequatur non fugit iste autem? Optio est perferendis nam.</div>
+                </div>
+                <div class="horz-item">
+                    <div class="box"></div>
+                    <div style="width: 150px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam, hic ratione ullam aliquid obcaecati eius officia, soluta ea, voluptate aspernatur dolorum consequatur non fugit iste autem? Optio est perferendis nam.</div>
+                </div>
+                <div class="horz-item">
+                    <div class="box"></div>
+                    <div style="width: 150px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam, hic ratione ullam aliquid obcaecati eius officia, soluta ea, voluptate aspernatur dolorum consequatur non fugit iste autem? Optio est perferendis nam.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="item" style="background-color: lightgray; color: black; padding: 50px; font-size: 27px; font-style: italic;">
+
+            <div>
+
+                <blockquote>
+                    I was a queen, and you took away my crown; a wife, and you killed my husband; a mother, and you deprived me of my children. My blood alone remains: take it, but do not make me suffer long.
+                    <br>
+                    <cite style="float: right;">- Marie Antoinette</cite>
+                </blockquote>
+               
+            </div>
+
+
+        </div>
+
+        <div class="item">
+            <div style="background-color: pink; width: 700px; height: 150px; margin: 50px;">
+
+                <div class="horz-column">
+
+                    <div class="horz-item">
+
+                        <h3>Sign up here to learn more aboue marie Antoinette</h3>
+
+                        
+                    </div>
+                    <div class="horz-item">
+
+                        <span><button>Sign Up</button></span>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+      
+    
+
+
+        <!-- footer -->
+
+
+        <div class="item">
+
+           <div style="background-color: #333; width: 950px; height: 50px; margin: 50px;">
+            <div style="text-align: center; padding-top: 10px;">
+                The Odin Project - Landing Page
+            </div>
+           </div>
+
+        </div>
+        
+
+    </div>
+
+</body>
+</html>
